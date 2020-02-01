@@ -4,6 +4,7 @@
   "description": "Gatsby with Typescript, Storybook and Styled Components.",
   "version": "0.1.0",
   "author": "George Wilde <george@wildecreations.co.uk>",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -11,7 +12,7 @@
     "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint:css": "stylelint './src/**/*.styled.ts'"
@@ -63,6 +64,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "react-is": "^16.12.0",
     "stylelint": "^13.0.0",
@@ -74,15 +77,10 @@
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.7.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
