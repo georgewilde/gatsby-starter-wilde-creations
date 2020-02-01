@@ -13,11 +13,13 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint:css": "stylelint './src/**/*.styled.ts'"
   },
   "dependencies": {
     "@types/react-helmet": "^5.0.15",
     "@types/styled-components": "^4.4.2",
+    "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -50,11 +52,27 @@
     "@types/node": "^13.5.3",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
     "babel-loader": "^8.0.6",
     "babel-preset-react-app": "^9.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1",
     "react-is": "^16.12.0",
-    "tsconfig-paths-webpack-plugin": "^3.2.0"
+    "stylelint": "^13.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^4.0.0",
+    "stylelint-processor-styled-components": "^1.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.7.5"
   },
   "keywords": [
     "gatsby"

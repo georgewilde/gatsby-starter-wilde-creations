@@ -2,8 +2,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-  background: rebeccapurple;
   margin-bottom: 1.45rem;
+  background: rebeccapurple;
 `;
 
 export const StyledInner = styled.div`

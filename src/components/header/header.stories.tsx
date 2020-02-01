@@ -7,7 +7,7 @@ import { Header } from './header';
 storiesOf('Header', module)
   .addDecorator(withKnobs)
   .add('default', () => {
-    const title = 'Test';
+    const title = 'Site title';
 
     return <Header siteTitle={title} />;
   });
