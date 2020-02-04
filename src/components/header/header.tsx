@@ -15,7 +15,9 @@ export const Header: FC<HeaderProps> = ({ siteTitle }) => (
   <StyledHeader>
     <StyledInner className="container">
       <StyledLogoText>
-        <StyledLink to="/">{siteTitle}</StyledLink>
+        <StyledLink to="/" data-testid="siteTitle">
+          {siteTitle}
+        </StyledLink>
       </StyledLogoText>
     </StyledInner>
   </StyledHeader>

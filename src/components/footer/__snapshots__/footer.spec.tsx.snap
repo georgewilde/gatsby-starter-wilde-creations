@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<footer
+  className="c0"
+>
+  <div
+    data-testid="copyright"
+  >
+    © 
+    2020
+    , Avalon Electricals
+  </div>
+  <div>
+    Website created by
+     
+    <a
+      data-testid="createdBy"
+      href="https://www.wildecreations.co.uk"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Wilde Creations Ltd
+    </a>
+  </div>
+</footer>
+`;

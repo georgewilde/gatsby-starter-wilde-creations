@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import { Header } from '@components/header';
 import { Footer } from '@components/footer';
-import '../../css/materialize.min.css';
+import '@css/materialize.min.css';
 
 export const Layout: FC = ({ children }) => {
   const data = useStaticQuery(graphql`
