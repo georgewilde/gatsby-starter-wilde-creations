@@ -2,19 +2,24 @@ import { action } from '@storybook/addon-actions';
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { addDecorator, addParameters } from '@storybook/react';
+import { addDecorator, addParameters, configure } from '@storybook/react';
 
-// Gatsby's Link overrides:
-// Gatsby defines a global called ___loader. To prevent its method calls from creating console errors you override it here.
+const req = require.context('../', true, /stories\.(ts|tsx)$/);
+
+const loadStories = () => {
+  req.keys().forEach(filename => req(filename));
+};
+
+// @ts-ignore
 global.___loader = {
   enqueue: () => {},
   hovering: () => {},
 };
 
-// Gatsby internal mocking to prevent unnecessary errors in storybook testing environment.
+// @ts-ignore
 global.__PATH_PREFIX__ = '';
 
-// This is utilized to override the window.___navigate method Gatsby defines and uses to report what path a Link would be taking us to if it wasn't inside a storybook.
+// @ts-ignore
 window.___navigate = pathname => {
   action('NavigateTo:')(pathname);
 };
@@ -30,3 +35,5 @@ addParameters({
 
 addDecorator(withKnobs);
 addDecorator(withA11y);
+
+configure(loadStories, module);
