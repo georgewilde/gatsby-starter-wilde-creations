@@ -2,26 +2,41 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
+import { SiteMetadata, SiteMetadataContext } from '@context/site-metadata';
 import { Header } from './Header';
 
 describe(`Header component`, () => {
+  let siteMetadata: SiteMetadata;
+
+  beforeEach(() => {
+    siteMetadata = {
+      title: 'test title',
+    };
+  });
+
   it(`should correctly render the site title`, () => {
-    const siteTitle = 'test site title';
+    const { getByTestId } = render(
+      <SiteMetadataContext.Provider value={siteMetadata}>
+        <Header />
+      </SiteMetadataContext.Provider>
+    );
 
-    const { getByTestId } = render(<Header siteTitle={siteTitle} />);
-
-    expect(getByTestId('siteTitle')).toHaveTextContent(siteTitle);
+    expect(getByTestId('siteTitle')).toHaveTextContent('test title');
   });
 
   it(`should have a link to the home page on the site title`, () => {
-    const { getByTestId } = render(<Header siteTitle="test site title" />);
+    const { getByTestId } = render(<Header />);
 
     expect(getByTestId('siteTitle')).toHaveAttribute('href', '/');
   });
 
   it(`should render correctly`, () => {
     const tree = renderer
-      .create(<Header siteTitle="test site title" />)
+      .create(
+        <SiteMetadataContext.Provider value={siteMetadata}>
+          <Header />
+        </SiteMetadataContext.Provider>
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();

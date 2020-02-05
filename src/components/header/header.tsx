@@ -6,19 +6,20 @@ import {
   StyledLink,
   StyledLogoText,
 } from './header.styled';
+import { SiteMetadataContext } from '@context/site-metadata';
 
-interface HeaderProps {
-  siteTitle: string;
-}
-
-export const Header: FC<HeaderProps> = ({ siteTitle }) => (
-  <StyledHeader>
-    <StyledInner className="container">
-      <StyledLogoText>
-        <StyledLink to="/" data-testid="siteTitle">
-          {siteTitle}
-        </StyledLink>
-      </StyledLogoText>
-    </StyledInner>
-  </StyledHeader>
+export const Header: FC = () => (
+  <SiteMetadataContext.Consumer>
+    {(siteMetadata): JSX.Element => (
+      <StyledHeader>
+        <StyledInner className="container">
+          <StyledLogoText>
+            <StyledLink to="/" data-testid="siteTitle">
+              {siteMetadata.title}
+            </StyledLink>
+          </StyledLogoText>
+        </StyledInner>
+      </StyledHeader>
+    )}
+  </SiteMetadataContext.Consumer>
 );

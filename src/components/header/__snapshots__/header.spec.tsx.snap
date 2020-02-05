@@ -34,7 +34,7 @@ exports[`Header component should render correctly 1`] = `
         data-testid="siteTitle"
         href="/"
       >
-        test site title
+        test title
       </a>
     </h1>
   </div>

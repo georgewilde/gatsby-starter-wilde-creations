@@ -1,6 +1,7 @@
+/* eslint @typescript-eslint/camelcase: 0 */
 module.exports = {
   siteMetadata: {
-    title: `Avalon Electricals`,
+    title: `Site title`,
     description: `NICEIC Registered Electrician - Approved Electrician in Street, Somerset`,
     author: `Callum Child`,
   },
@@ -31,4 +32,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-}
+};

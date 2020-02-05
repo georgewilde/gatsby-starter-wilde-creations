@@ -1,28 +1,22 @@
 import React, { FC } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
+import { useSiteMetadata } from '@hooks/site-metadata';
 import { Header } from '@components/header';
 import { Footer } from '@components/footer';
-import '@css/materialize.min.css';
+import { SiteMetadataContext } from '@context/site-metadata';
+
+import '@styles/materialize.min.css';
 
 export const Layout: FC = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const siteMetadata = useSiteMetadata();
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <SiteMetadataContext.Provider value={siteMetadata}>
+      <Header />
       <div className="container">
         <main>{children}</main>
         <Footer />
       </div>
-    </>
+    </SiteMetadataContext.Provider>
   );
 };

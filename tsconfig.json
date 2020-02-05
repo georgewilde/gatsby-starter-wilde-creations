@@ -13,7 +13,10 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@css/*": ["css/*"]
+      "@styles/*": ["styles/*"],
+      "@static/*": ["static/*"],
+      "@context/*": ["context/*"],
+      "@hooks/*": ["hooks/*"]
     }
   },
   "include": ["./src/**/*"],
