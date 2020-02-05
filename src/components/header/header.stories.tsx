@@ -1,3 +1,4 @@
+import { SiteMetadataContext } from '@context/site-metadata';
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -7,7 +8,13 @@ import { Header } from './header';
 storiesOf('Header', module)
   .addDecorator(withKnobs)
   .add('default', () => {
-    const title = 'Site title';
+    const siteMetadata = {
+      title: 'Test Title',
+    };
 
-    return <Header siteTitle={title} />;
+    return (
+      <SiteMetadataContext.Provider value={siteMetadata}>
+        <Header />
+      </SiteMetadataContext.Provider>
+    );
   });

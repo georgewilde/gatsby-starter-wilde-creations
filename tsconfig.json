@@ -8,6 +8,7 @@
     "allowJs": true,
     "module": "commonjs",
     "target": "esnext",
+    "strict": true,
     "jsx": "react",
     "lib": ["dom", "esnext"],
     "baseUrl": "src",

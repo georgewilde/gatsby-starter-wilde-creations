@@ -1,3 +1,6 @@
+const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 module.exports = ({ config }) => {
   // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
   config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
@@ -33,6 +36,13 @@ module.exports = ({ config }) => {
       ],
     },
   });
+
+  config.resolve.plugins = config.resolve.plugins || [];
+  config.resolve.plugins.push(
+    new TsconfigPathsPlugin({
+      configFile: path.resolve(__dirname, './tsconfig.json'),
+    })
+  );
 
   config.resolve.extensions.push('.ts', '.tsx');
 
