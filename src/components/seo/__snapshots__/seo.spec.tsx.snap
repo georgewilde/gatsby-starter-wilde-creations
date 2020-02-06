@@ -1,5 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SEO component should not render anything to the screen 1`] = `null`;
-
-exports[`SEO component should render correctly 1`] = `null`;
