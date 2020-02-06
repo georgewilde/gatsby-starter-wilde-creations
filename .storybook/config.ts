@@ -3,6 +3,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { addDecorator, addParameters, configure } from '@storybook/react';
+import { jsxDecorator } from 'storybook-addon-jsx/lib';
 
 import { withTheme } from './decorators/app';
 
@@ -37,6 +38,7 @@ addParameters({
 
 addDecorator(withKnobs);
 addDecorator(withA11y);
+addDecorator(jsxDecorator);
 addDecorator(withTheme);
 
 configure(loadStories, module);

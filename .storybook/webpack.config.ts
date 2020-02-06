@@ -4,13 +4,13 @@ import webpack from 'webpack';
 
 const config: webpack.Configuration = {
   resolve: {
+    extensions: ['.ts', '.tsx', '.css', '.js'],
     mainFields: ['browser', 'module', 'main'],
     plugins: [
       new TsconfigPathsPlugin({
         configFile: path.resolve(__dirname, './tsconfig.json'),
       }),
     ],
-    extensions: ['.ts', '.tsx'],
   },
   module: {
     rules: [
@@ -38,6 +38,10 @@ const config: webpack.Configuration = {
             require.resolve('babel-plugin-remove-graphql-queries'),
           ],
         },
+      },
+      {
+        test: /\.css$/,
+        loader: require.resolve('css-loader'),
       },
     ],
   },
