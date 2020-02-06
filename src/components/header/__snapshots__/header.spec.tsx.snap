@@ -28,7 +28,7 @@ exports[`Header component should render correctly 1`] = `
   <div
     className="c1 container"
   >
-    <h1
+    <div
       className="c2"
     >
       <a
@@ -38,7 +38,7 @@ exports[`Header component should render correctly 1`] = `
       >
         Acme Co.
       </a>
-    </h1>
+    </div>
   </div>
 </header>
 `;
