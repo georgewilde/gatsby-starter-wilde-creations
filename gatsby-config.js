@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/camelcase: 0 */
 module.exports = {
   siteMetadata: {
-    title: `Site title`,
+    companyName: `Acme Co.`,
     description: `NICEIC Registered Electrician - Approved Electrician in Street, Somerset`,
     author: `Callum Child`,
   },
@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Avalon Electricals`,
-        short_name: `Avalon`,
+        short_name: `Avalon Elec`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

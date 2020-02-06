@@ -12,6 +12,8 @@ exports[`Header component should render correctly 1`] = `
 
 .c2 {
   margin: 0;
+  font-weight: 400;
+  font-size: 2em;
 }
 
 .c3 {
@@ -34,7 +36,7 @@ exports[`Header component should render correctly 1`] = `
         data-testid="siteTitle"
         href="/"
       >
-        test title
+        Acme Co.
       </a>
     </h1>
   </div>

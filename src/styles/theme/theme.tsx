@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 
-import { theme } from './theme-dark';
+import { theme } from './theme-light';
 import { GlobalStyle } from './global-style';
 import { GlobalFonts } from './fonts';
 

@@ -6,6 +6,7 @@ import { SEO } from '@components/seo';
 const IndexPage: FC = () => (
   <Layout>
     <SEO title="Home" />
+    <h1>This is the home page</h1>
   </Layout>
 );
 

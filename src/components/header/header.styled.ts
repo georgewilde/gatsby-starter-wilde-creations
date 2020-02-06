@@ -10,8 +10,10 @@ export const StyledInner = styled.div`
   padding: 0.5rem;
 `;
 
-export const StyledLogoText = styled.h1`
+export const StyledLogoText = styled.div`
   margin: 0;
+  font-weight: 400;
+  font-size: 2em;
 `;
 
 export const StyledLink = styled(Link)`

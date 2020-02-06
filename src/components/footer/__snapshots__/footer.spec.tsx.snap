@@ -20,7 +20,8 @@ exports[`Footer component should render correctly 1`] = `
   >
     © 
     2020
-    , Avalon Electricals
+    , 
+    Acme Co.
   </div>
   <div>
     Website created by

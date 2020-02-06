@@ -10,7 +10,9 @@ describe(`Header component`, () => {
 
   beforeEach(() => {
     siteMetadata = {
-      title: 'test title',
+      companyName: 'Acme Co.',
+      description: '',
+      author: '',
     };
   });
 
@@ -21,7 +23,7 @@ describe(`Header component`, () => {
       </SiteMetadataContext.Provider>
     );
 
-    expect(getByTestId('siteTitle')).toHaveTextContent('test title');
+    expect(getByTestId('siteTitle')).toHaveTextContent('Acme Co.');
   });
 
   it(`should have a link to the home page on the site title`, () => {

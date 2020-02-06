@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { theme } from './theme-dark';
+import { theme } from './theme-light';
 
 export const GlobalStyle = createGlobalStyle`
   html {
