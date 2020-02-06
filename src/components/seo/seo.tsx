@@ -1,6 +1,6 @@
-import { SiteMetadataContext } from '@context/site-metadata';
 import React, { FC } from 'react';
 import { Helmet } from 'react-helmet';
+import { SiteMetadataContext } from '@context/site-metadata';
 
 interface SEOProps {
   title: string;

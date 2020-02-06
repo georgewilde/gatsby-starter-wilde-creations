@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-import { useSiteMetadata } from '@hooks/site-metadata';
-import { Header } from '@components/header';
 import { Footer } from '@components/footer';
+import { Header } from '@components/header';
 import { SiteMetadataContext } from '@context/site-metadata';
+import { useSiteMetadata } from '@hooks';
 
-import '@styles/materialize.min.css';
+import '@static/styles/materialize.min.css';
 
 export const Layout: FC = ({ children }) => {
   const siteMetadata = useSiteMetadata();

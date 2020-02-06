@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { theme } from './theme-light';
-
 export const GlobalStyle = createGlobalStyle`
   html {
     font-size: 10px;
@@ -19,15 +17,15 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     font-size: 1.5rem;
     font-family: montserrat, sans-serif;
-    background-color: ${theme.colors.background};
+    background-color: ${props => props.theme.colors.background};
   }
 
   a {
-    color: ${theme.colors.link};
+    color: ${props => props.theme.colors.link};
     text-decoration: none;
 
     &:hover {
-      color: ${theme.colors.linkHover};
+      color: ${props => props.theme.colors.linkHover};
       text-decoration: none;
     }
   }

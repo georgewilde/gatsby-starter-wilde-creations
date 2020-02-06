@@ -2,15 +2,23 @@
   "settings": {
     "react": {
       "version": "latest"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "env": {
     "browser": true,
@@ -18,8 +26,58 @@
     "node": true
   },
   "rules": {
-    "@typescript-eslint/no-var-requires": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "react/prop-types": 0
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/prop-types": "off",
+    "import/no-unresolved": "error",
+    "import/default": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "internal",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroups": [
+          {
+            "pattern": "@components/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@static/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@context/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@hooks/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@hooks",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@themes/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@themes",
+            "group": "sibling"
+          }
+        ]
+      }
+    ]
   }
 }

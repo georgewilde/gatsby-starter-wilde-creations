@@ -1,10 +1,10 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 
-import { Header } from './header';
+import { Footer } from '@components/footer/footer';
 import { SiteMetadata, SiteMetadataContext } from '@context/site-metadata';
 
-storiesOf('Header', module).add('default', () => {
+storiesOf('Footer', module).add('default', () => {
   const siteMetadata: SiteMetadata = {
     companyName: 'Acme Co.',
     description: '',
@@ -13,7 +13,7 @@ storiesOf('Header', module).add('default', () => {
 
   return (
     <SiteMetadataContext.Provider value={siteMetadata}>
-      <Header />
+      <Footer />
     </SiteMetadataContext.Provider>
   );
 });

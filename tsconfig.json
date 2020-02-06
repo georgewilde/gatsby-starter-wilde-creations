@@ -14,10 +14,12 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["components/*"],
-      "@styles/*": ["styles/*"],
       "@static/*": ["static/*"],
       "@context/*": ["context/*"],
-      "@hooks/*": ["hooks/*"]
+      "@hooks/*": ["hooks/*"],
+      "@hooks": ["hooks"],
+      "@themes/*": ["themes/*"],
+      "@themes": ["themes"]
     }
   },
   "include": ["./src/**/*"],

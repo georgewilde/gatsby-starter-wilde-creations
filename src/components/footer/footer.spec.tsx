@@ -1,6 +1,6 @@
-import React from 'react';
 import { render } from '@testing-library/react';
-import renderer from 'react-test-renderer';
+import React from 'react';
+import { create } from 'react-test-renderer';
 
 import { Footer } from './footer';
 import { SiteMetadata, SiteMetadataContext } from '@context/site-metadata';
@@ -55,13 +55,11 @@ describe(`Footer component`, () => {
   });
 
   it(`should render correctly`, () => {
-    const tree = renderer
-      .create(
-        <SiteMetadataContext.Provider value={siteMetadata}>
-          <Footer />
-        </SiteMetadataContext.Provider>
-      )
-      .toJSON();
+    const tree = create(
+      <SiteMetadataContext.Provider value={siteMetadata}>
+        <Footer />
+      </SiteMetadataContext.Provider>
+    ).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
