@@ -32,7 +32,7 @@ exports[`Footer component should render correctly 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      Wilde Creations Ltd
+      Your Company Ltd
     </a>
   </div>
 </footer>
