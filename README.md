@@ -1,5 +1,3 @@
-## 🚀 Quick start
-
 Use this Gatsby 2 starter to create your own Gatsby website.
 
 Check out a [demo of this starter](https://gatsby-starter-wilde-creations.netlify.com/).
@@ -8,7 +6,7 @@ Check out a [this starter's Storybook](https://gatsby-starter-wilde-creations.ne
 
 This starter is set up to provide the latest and greatest tooling to ensure the stability of your website or web application.
 
-## Getting started
+## 🚀 Quick start
 
 1.  **Create a Gatsby site**
 
