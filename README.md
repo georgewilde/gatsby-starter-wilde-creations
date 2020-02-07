@@ -50,4 +50,4 @@ This starter is set up to provide the latest and greatest tooling to ensure the 
 
 ## 😁 Have Fun
 
-If you have any questions please feel free to reach out directly to getorge@wildecreations.co.uk.
+If you have any questions please feel free to reach out directly at george@wildecreations.co.uk.
