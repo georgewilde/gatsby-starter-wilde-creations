@@ -2,9 +2,9 @@ Use this Gatsby 2 starter to create your own Gatsby website.
 
 Check out a [demo of this starter](https://gatsby-starter-wilde-creations.netlify.com/).
 
-Check out a [this starter's Storybook](https://gatsby-starter-wilde-creations.netlify.com/).
+Check out [this starter's Storybook](https://gatsby-starter-wilde-creations.netlify.com/).
 
-This starter is set up to provide the latest and greatest tooling to ensure the stability of your website or web application.
+This starter is set up to provide the latest and greatest tooling, helping to ensure the stability of your website or web application.
 
 ## 🚀 Quick start
 
@@ -46,6 +46,18 @@ This starter is set up to provide the latest and greatest tooling to ensure the 
 - React Testing Library
 - Stylelint
 
-## 😁 Have Fun
+## 👷 To Do
+
+Although this start is fully functioning and ready to use, this is a list of things that would make it even better:
+
+- Add ability to easily switch between styled component themes.
+- Add Jest tests for the sitemetadata context and hook.
+- Add Jest tests to the theme component.
+- Add Jest tests to the Image component.
+- Add Jest tests to the Seo component.
+- Add a plop / yeoman generator config.
+- Add cypress tests.
+
+## 😁 Questions
 
 If you have any questions please feel free to reach out directly at george@wildecreations.co.uk.

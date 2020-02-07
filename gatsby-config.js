@@ -1,9 +1,15 @@
 /* eslint @typescript-eslint/camelcase: 0 */
+const companyName = 'Acme Co.';
+const shortName = 'Acme';
+const description = 'A description for your site';
+const author = 'Your Name';
+const primaryColor = '#663399';
+
 module.exports = {
   siteMetadata: {
-    companyName: `Acme Co.`,
-    description: `NICEIC Registered Electrician - Approved Electrician in Street, Somerset`,
-    author: `Callum Child`,
+    companyName: companyName,
+    description: description,
+    author: author,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,11 +27,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Avalon Electricals`,
-        short_name: `Avalon Elec`,
+        name: companyName,
+        short_name: shortName,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: primaryColor,
+        theme_color: primaryColor,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
       },
