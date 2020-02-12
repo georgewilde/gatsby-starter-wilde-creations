@@ -1,19 +1,16 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 
 import { Header } from './header';
-import { SiteMetadata, SiteMetadataContext } from '@context/site-metadata';
+import { SiteMetadataContext } from '@context/site-metadata';
+import { SiteMetadataMock } from '@mocks';
 
-storiesOf('Header', module).add('default', () => {
-  const siteMetadata: SiteMetadata = {
-    companyName: 'Acme Co.',
-    description: '',
-    author: '',
-  };
+export default {
+  title: 'Simple Component|Header',
+  component: Header,
+};
 
-  return (
-    <SiteMetadataContext.Provider value={siteMetadata}>
-      <Header />
-    </SiteMetadataContext.Provider>
-  );
-});
+export const Default = () => (
+  <SiteMetadataContext.Provider value={SiteMetadataMock}>
+    <Header />
+  </SiteMetadataContext.Provider>
+);

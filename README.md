@@ -2,7 +2,7 @@ Use this Gatsby 2 starter to create your own Gatsby website.
 
 Check out a [demo of this starter](https://gatsby-starter-wilde-creations.netlify.com/).
 
-Check out [this starter's Storybook](https://gatsby-starter-wilde-creations.netlify.com/).
+Check out [this starter's Storybook](https://gatsby-starter-wilde-creations.netlify.com/docs).
 
 This starter is set up to provide the latest and greatest tooling, helping to ensure the stability of your website or web application.
 
@@ -28,9 +28,7 @@ This starter is set up to provide the latest and greatest tooling, helping to en
 
 1.  **Open the source code and start editing!**
 
-    Your site is now running at `https://localhost:8000`!
-
-    As this is running on https by default, you may need to tell your browser to allow the self-signed certificate.
+    Your site is now running at `http://localhost:8000`.
 
 ## 🧐 What's inside?
 
@@ -57,6 +55,7 @@ Although this start is fully functioning and ready to use, this is a list of thi
 - Add Jest tests to the Seo component.
 - Add a plop / yeoman generator config.
 - Add cypress tests.
+- Add Storybook docs.
 
 ## 😁 Questions
 

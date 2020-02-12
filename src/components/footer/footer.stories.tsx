@@ -1,19 +1,16 @@
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 
-import { Footer } from '@components/footer/footer';
-import { SiteMetadata, SiteMetadataContext } from '@context/site-metadata';
+import { Footer } from './footer';
+import { SiteMetadataContext } from '@context/site-metadata';
+import { SiteMetadataMock } from '@mocks';
 
-storiesOf('Footer', module).add('default', () => {
-  const siteMetadata: SiteMetadata = {
-    companyName: 'Acme Co.',
-    description: '',
-    author: '',
-  };
+export default {
+  title: 'Simple Component|Footer',
+  component: Footer,
+};
 
-  return (
-    <SiteMetadataContext.Provider value={siteMetadata}>
-      <Footer />
-    </SiteMetadataContext.Provider>
-  );
-});
+export const Default = () => (
+  <SiteMetadataContext.Provider value={SiteMetadataMock}>
+    <Footer />
+  </SiteMetadataContext.Provider>
+);

@@ -69,6 +69,14 @@
             "group": "sibling"
           },
           {
+            "pattern": "@mocks/**",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@mocks",
+            "group": "sibling"
+          },
+          {
             "pattern": "@themes/**",
             "group": "sibling"
           },

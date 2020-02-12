@@ -1,19 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component should render correctly 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
+exports[`Storyshots Simple Component|Footer Default 1`] = `
 <footer
-  className="c0"
+  className="sc-AykKC gGkBwA"
 >
   <div
     data-testid="copyright"

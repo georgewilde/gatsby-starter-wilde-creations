@@ -11,15 +11,16 @@
     "strict": true,
     "jsx": "react",
     "lib": ["dom", "esnext"],
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@static/*": ["static/*"],
-      "@context/*": ["context/*"],
-      "@hooks/*": ["hooks/*"],
-      "@hooks": ["hooks"],
-      "@themes/*": ["themes/*"],
-      "@themes": ["themes"]
+      "@components/*": ["src/components/*"],
+      "@static/*": ["src/static/*"],
+      "@context/*": ["src/context/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@hooks": ["src/hooks"],
+      "@mocks": ["__mocks__"],
+      "@themes/*": ["src/themes/*"],
+      "@themes": ["src/themes"]
     }
   },
   "include": ["./src/**/*"],
