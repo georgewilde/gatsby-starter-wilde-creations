@@ -5,7 +5,7 @@ import { SiteMetadataContext } from '@context/site-metadata';
 import { SiteMetadataMock } from '@mocks';
 
 export default {
-  title: 'Simple Component|Header',
+  title: 'Simple Components/Header',
   component: Header,
 };
 

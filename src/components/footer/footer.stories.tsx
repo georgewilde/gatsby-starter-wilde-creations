@@ -5,7 +5,7 @@ import { SiteMetadataContext } from '@context/site-metadata';
 import { SiteMetadataMock } from '@mocks';
 
 export default {
-  title: 'Simple Component|Footer',
+  title: 'Simple Components/Footer',
   component: Footer,
 };
 
