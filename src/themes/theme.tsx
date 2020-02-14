@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { Normalize } from 'styled-normalize';
 
 import { GlobalFonts } from './fonts';
 import { GlobalStyle } from './global-style';
@@ -28,7 +27,6 @@ export const Theme: FC<ThemeProps> = ({ theme, children }) => {
 
   return (
     <ThemeProvider theme={themeToShow}>
-      <Normalize />
       <GlobalStyle />
       <GlobalFonts />
       {children}

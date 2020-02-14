@@ -6,7 +6,23 @@ import { SEO } from '@components/seo';
 const IndexPage: FC = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>This is the home page</h1>
+    <h1>🚀 A bare-bones Gatsby starter that&apos;s ready to rock and roll</h1>
+    <ul>
+      <li>✅ TypeScript</li>
+      <li>✅ Styled Components</li>
+      <li>✅ StoryBook</li>
+    </ul>
+    <p>
+      📖 View the{' '}
+      <a
+        href="https://github.com/georgewilde/gatsby-starter-wilde-creations/blob/master/README.md"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        README
+      </a>{' '}
+      for all the details.
+    </p>
   </Layout>
 );
 

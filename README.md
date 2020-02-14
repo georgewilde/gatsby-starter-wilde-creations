@@ -1,4 +1,4 @@
-Use this Gatsby 2 starter to create your own Gatsby website.
+A bare-bones Gatsby starter that's ready to rock and roll.
 
 Check out a [demo of this starter](https://gatsby-starter-wilde-creations.netlify.com/).
 
@@ -30,19 +30,29 @@ This starter is set up to provide the latest and greatest tooling, helping to en
 
     Your site is now running at `http://localhost:8000`.
 
+1.  **Add a new component**
+
+    To make life easier and improve consistency, a component creation template is provided using Plop.
+    To add a new component, simply run the following command and follow the prompts:
+
+    ```shell
+    yarn generate component
+    ```
+
 ## 🧐 What's inside?
 
 - Gatsby
 - TypeScript
 - Styled Components
-- Helmet
 - Storybook
+- Helmet
 - Jest
 - ESLint
 - Husky
 - Prettier
 - React Testing Library
 - Stylelint
+- Materialize
 
 ## 👷 To Do
 
@@ -53,7 +63,6 @@ Although this start is fully functioning and ready to use, this is a list of thi
 - Add Jest tests to the theme component.
 - Add Jest tests to the Image component.
 - Add Jest tests to the Seo component.
-- Add a plop / yeoman generator config.
 - Add cypress tests.
 - Add Storybook docs.
 

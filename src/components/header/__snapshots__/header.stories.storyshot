@@ -21,3 +21,25 @@ exports[`Storyshots Simple Component|Header Default 1`] = `
   </div>
 </header>
 `;
+
+exports[`Storyshots Simple Components/Header Default 1`] = `
+<header
+  className="sc-AykKD gzfAfk"
+>
+  <div
+    className="sc-AykKE COZZj container"
+  >
+    <div
+      className="sc-AykKF jskQQp"
+    >
+      <a
+        className="sc-AykKG FKfro"
+        data-testid="siteTitle"
+        href="/"
+      >
+        Acme Co.
+      </a>
+    </div>
+  </div>
+</header>
+`;

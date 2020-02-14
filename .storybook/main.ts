@@ -5,7 +5,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-viewport',
     '@storybook/addon-knobs',
+    '@storybook/addon-storysource',
     'storybook-dark-mode',
-    'storybook-addon-jsx',
   ],
 };
