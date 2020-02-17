@@ -1,35 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Simple Component|Footer Default 1`] = `
-<footer
-  className="sc-AykKC gGkBwA"
->
-  <div
-    data-testid="copyright"
-  >
-    © 
-    2020
-    , 
-    Acme Co.
-  </div>
-  <div>
-    Website created by
-     
-    <a
-      data-testid="createdBy"
-      href="https://www.wildecreations.co.uk"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Your Company Ltd
-    </a>
-  </div>
-</footer>
-`;
-
 exports[`Storyshots Simple Components/Footer Default 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 <footer
-  className="sc-AykKC gGkBwA"
+  className="c0"
 >
   <div
     data-testid="copyright"

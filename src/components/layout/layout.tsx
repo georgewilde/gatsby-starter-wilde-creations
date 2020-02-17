@@ -5,15 +5,13 @@ import { Header } from '@components/header';
 import { SiteMetadataContext } from '@context/site-metadata';
 import { useSiteMetadata } from '@hooks';
 
-import '@static/styles/materialize.min.css';
-
 export const Layout: FC = ({ children }) => {
   const siteMetadata = useSiteMetadata();
 
   return (
     <SiteMetadataContext.Provider value={siteMetadata}>
       <Header />
-      <div className="container">
+      <div className="container mx-auto">
         <main>{children}</main>
         <Footer />
       </div>

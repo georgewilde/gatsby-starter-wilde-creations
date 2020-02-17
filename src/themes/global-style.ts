@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   *,
@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-size: 1.5rem;
     font-family: montserrat, sans-serif;
     background-color: ${props => props.theme.colors.background};
   }

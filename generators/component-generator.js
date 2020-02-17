@@ -18,6 +18,11 @@ module.exports = function(plop) {
         message: 'What files do you want to generate?',
         choices: () => [
           {
+            name: `Styles`,
+            value: 'styles',
+            checked: true,
+          },
+          {
             name: `Unit tests`,
             value: 'test',
             checked: true,
@@ -29,25 +34,42 @@ module.exports = function(plop) {
           },
         ],
       },
+      {
+        type: 'confirm',
+        name: 'hasProps',
+        message: `Does this component have any props?`,
+      },
     ],
     actions: data => {
       const actions = [
         {
           type: 'add',
-          path: `${baseUrl}/{{name}}/{{name}}.tsx`,
+          path: `${baseUrl}/{{lowerCase name}}/{{lowerCase name}}.tsx`,
           templateFile: 'templates/component/component.hbs',
+          data: {
+            includeStyles: data.files.includes('styles'),
+            hasProps: data.hasProps,
+          },
         },
         {
           type: 'add',
-          path: `${baseUrl}/{{name}}/index.ts`,
+          path: `${baseUrl}/{{lowerCase name}}/index.ts`,
           templateFile: 'templates/component/index.hbs',
         },
       ];
 
+      if (data.files.includes('styles')) {
+        actions.push({
+          type: 'add',
+          path: `${baseUrl}/{{lowerCase name}}/{{lowerCase name}}.styled.tsx`,
+          templateFile: 'templates/component/styled.hbs',
+        });
+      }
+
       if (data.files.includes('test')) {
         actions.push({
           type: 'add',
-          path: `${baseUrl}/{{name}}/{{name}}.test.tsx`,
+          path: `${baseUrl}/{{lowerCase name}}/{{lowerCase name}}.test.tsx`,
           templateFile: 'templates/component/test.hbs',
         });
       }
@@ -55,7 +77,7 @@ module.exports = function(plop) {
       if (data.files.includes('stories')) {
         actions.push({
           type: 'add',
-          path: `${baseUrl}/{{name}}/{{name}}.stories.tsx`,
+          path: `${baseUrl}/{{lowerCase name}}/{{lowerCase name}}.stories.tsx`,
           templateFile: 'templates/component/stories.hbs',
         });
       }

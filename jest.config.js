@@ -1,10 +1,10 @@
 module.exports = {
-  preset: 'ts-jest',
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transform: {
     '^.+\\.stories\\.tsx$': '@storybook/addon-storyshots/injectFileName',
+    '^.+\\.tsx?$': 'babel-jest',
   },
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
@@ -22,5 +22,5 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: ``,
   },
-  setupFilesAfterEnv: ['./jest.setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 };

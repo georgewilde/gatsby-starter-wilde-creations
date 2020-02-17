@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
+    "noEmit": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
@@ -23,6 +22,5 @@
       "@themes": ["src/themes"]
     }
   },
-  "include": ["./src/**/*"],
-  "typeRoots": ["node_modules/@types"]
+  "include": ["./src/**/*", "./definitions/*.d.ts"]
 }

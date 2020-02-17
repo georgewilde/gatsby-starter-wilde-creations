@@ -1,5 +1,15 @@
 import React, { FC } from 'react';
 
-export const {{pascalCase name}}: FC = () => (
-  <p>Here's your {{name}} component.</p>
+{{#if includeStyles}}
+import { Styled{{pascalCase name}} } from './{{lowerCase name}}.styled';
+
+{{/if}}
+{{#if hasProps}}
+interface {{pascalCase name}}Props {
+  yourProp: string;
+}
+
+{{/if}}
+export const {{pascalCase name}}: FC{{#if hasProps}}<{{pascalCase name}}Props>{{/if}} = ({{#if hasProps}}{ yourProp }{{/if}}) => (
+  <p>Here is your {{lowerCase name}} component.</p>
 );

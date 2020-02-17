@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Simple Components/Button Controlled With Knobs 1`] = `
+.c0 {
+  background-color: #2c5282;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c0:hover {
+  background-color: #2b6cb0;
+}
+
+<button
+  className="c0"
+  size="default"
+>
+  This is a button
+</button>
+`;
+
+exports[`Storyshots Simple Components/Button Default 1`] = `
+.c0 {
+  background-color: #2c5282;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c0:hover {
+  background-color: #2b6cb0;
+}
+
+<button
+  className="c0"
+  size="default"
+>
+  This is a button
+</button>
+`;
+
+exports[`Storyshots Simple Components/Button Extra Large 1`] = `
+.c0 {
+  background-color: #2c5282;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1.875rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.c0:hover {
+  background-color: #2b6cb0;
+}
+
+<button
+  className="c0"
+  size="xlarge"
+>
+  This is a button
+</button>
+`;
+
+exports[`Storyshots Simple Components/Button Large 1`] = `
+.c0 {
+  background-color: #2c5282;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1.125rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.c0:hover {
+  background-color: #2b6cb0;
+}
+
+<button
+  className="c0"
+  size="large"
+>
+  This is a button
+</button>
+`;
+
+exports[`Storyshots Simple Components/Button Small 1`] = `
+.c0 {
+  background-color: #2c5282;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.c0:hover {
+  background-color: #2b6cb0;
+}
+
+<button
+  className="c0"
+  size="small"
+>
+  This is a button
+</button>
+`;

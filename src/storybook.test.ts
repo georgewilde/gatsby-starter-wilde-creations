@@ -1,8 +1,9 @@
 import initStoryshots, {
   multiSnapshotWithOptions,
 } from '@storybook/addon-storyshots';
+import { styleSheetSerializer } from 'jest-styled-components';
 
 initStoryshots({
-  integrityOptions: { cwd: __dirname },
   test: multiSnapshotWithOptions({}),
+  snapshotSerializers: [styleSheetSerializer],
 });

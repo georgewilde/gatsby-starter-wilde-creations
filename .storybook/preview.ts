@@ -3,10 +3,9 @@ import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import { withKnobs } from '@storybook/addon-knobs';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { jsxDecorator } from 'storybook-addon-jsx/lib';
 import { withTheme } from './decorators/app';
 
-import '../src/static/styles/materialize.min.css';
+import '@static/styles/tailwind.css';
 
 // System-wide parameters that all stories will use.
 addParameters({
@@ -42,5 +41,4 @@ window.___navigate = pathname => {
 // System wide decorators that will be available on all stories.
 addDecorator(withKnobs);
 addDecorator(withA11y);
-addDecorator(jsxDecorator);
 addDecorator(withTheme);

@@ -1,39 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Simple Component|Header Default 1`] = `
-<header
-  className="sc-AykKD gzfAfk"
->
-  <div
-    className="sc-AykKE COZZj container"
-  >
-    <div
-      className="sc-AykKF jskQQp"
-    >
-      <a
-        className="sc-AykKG FKfro"
-        data-testid="siteTitle"
-        href="/"
-      >
-        Acme Co.
-      </a>
-    </div>
-  </div>
-</header>
-`;
-
 exports[`Storyshots Simple Components/Header Default 1`] = `
+.c0 {
+  margin-bottom: 1.45rem;
+  background: rebeccapurple;
+}
+
+.c1 {
+  padding: 0.5rem;
+}
+
+.c2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.c3 {
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <header
-  className="sc-AykKD gzfAfk"
+  className="c0"
 >
   <div
-    className="sc-AykKE COZZj container"
+    className="c1 container"
   >
     <div
-      className="sc-AykKF jskQQp"
+      className="c2"
     >
       <a
-        className="sc-AykKG FKfro"
+        className="c3"
         data-testid="siteTitle"
         href="/"
       >

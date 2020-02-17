@@ -21,15 +21,17 @@
     "lint": "yarn lint:css && yarn lint:ts",
     "lint:css": "stylelint './src/**/*.styled.ts'",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
-    "generate": "plop --plopfile generators/plopfile.js"
+    "generate": "plop --plopfile generators/plopfile.js",
+    "checkTypes": "tsc",
+    "checkTypes:watch": "tsc --watch"
   },
   "dependencies": {
-    "babel-eslint": "^10.0.3",
-    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.33",
+    "gatsby-plugin-postcss": "^2.1.20",
+    "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-plugin-styled-components": "^3.1.18",
@@ -44,6 +46,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
     "@storybook/addon-a11y": "^5.3.9",
     "@storybook/addon-actions": "^5.3.9",
     "@storybook/addon-centered": "^5.3.9",
@@ -67,7 +73,10 @@
     "@types/webpack": "^4.41.5",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
+    "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-preset-gatsby": "^0.2.29",
     "babel-preset-react-app": "^9.1.1",
     "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.2.0",
@@ -83,6 +92,7 @@
     "jest-styled-components": "^7.0.0",
     "lint-staged": "^10.0.7",
     "plop": "^2.5.3",
+    "postcss-import": "^12.0.1",
     "prettier": "^1.19.1",
     "react-is": "^16.12.0",
     "react-test-renderer": "^16.12.0",
@@ -93,15 +103,10 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "^4.0.0",
     "stylelint-processor-styled-components": "^1.9.0",
-    "ts-jest": "^25.2.0",
+    "tailwind.macro": "^1.0.0-alpha.10",
+    "tailwindcss": "^1.2.0",
     "ts-node": "^8.6.2",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.7.5"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }
