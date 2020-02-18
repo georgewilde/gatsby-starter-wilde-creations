@@ -12,8 +12,9 @@ module.exports = {
     'storybook-dark-mode',
   ],
   webpackFinal: async (config: any) => {
-    // Set the NODE_ENV value to "production" to allow babel-plugin-remove-graphql-queries to remove static queries.
-    process.env.NODE_ENV = 'production';
+    // Set the NODE_ENV value to "test" to allow babel-plugin-remove-graphql-queries to remove static queries
+    // and to prevent babel from loading the "babel-preset-gatsby" preset as this requires Gatsby to have been built first.
+    process.env.NODE_ENV = 'test';
 
     // Transpile the Gatsby node module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
