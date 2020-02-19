@@ -1,7 +1,12 @@
 module.exports = {
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
-  testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
+  testPathIgnorePatterns: [
+    `node_modules`,
+    `\\.cache`,
+    `<rootDir>.*/public`,
+    `<rootDir>/storybook-static/`,
+  ],
   transform: {
     '^.+\\.stories\\.tsx$': '@storybook/addon-storyshots/injectFileName',
     '^.+\\.tsx?$': 'babel-jest',
