@@ -19,7 +19,7 @@
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o public/docs",
     "lint": "yarn lint:css && yarn lint:ts",
-    "lint:css": "stylelint './src/**/*.styled.ts'",
+    "lint:styles": "stylelint './src/**/*.styled.ts'",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "generate": "plop --plopfile generators/plopfile.js",
     "checkTypes": "tsc",
